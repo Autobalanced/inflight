@@ -1,0 +1,30 @@
+/*.row
+{
+	max-width: 1040px;
+}*/
+
+.menuitem
+{
+	padding: 30px;
+	margin-bottom: 30px;
+	color: inherit;
+	background-color: #3498db;
+}
+
+@media screen and (min-width: 768px) {
+  .menuitem {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .menuitem {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .menuitem h1,
+  .menuitem .h1 {
+    font-size: 67.5px;
+    color: white;
+    text-align: center;
+  }
+}
+
