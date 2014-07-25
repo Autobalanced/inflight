@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html ng-app="questionnaire">
+
+	<head>
+		<title>Inflight Research v0.1</title>
+
+		<!-- Latest compiled and minified bootstrap CSS -->
+		<link rel="stylesheet" href="../../Resources/bootstrap-compiled-3.2.0/css/bootstrap.min.css">
+		<!-- Custom stylesheet -->
+		<link rel="stylesheet" href="http://bootswatch.com/flatly/bootstrap.min.css">
+
+		<link rel="stylesheet" href="stylesheet.css">
+	</head>
+
+	<body>
+
+		<!-- Questionnaire main -->
+		<div class="container-fluid" ng-controller="questionController as questions">
+			<div class="row">
+				<div class="col-md-12">
+					
+					<!-- Introduction -->
+					<div class="container-fluid">
+						<div class="row">
+							<header>
+								<h3>Introduction:</h3>
+							</header>
+							<hr>
+							<div class="col-md-12">
+								<p>Introduction text here.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Angular Introduction container -->
+					<!--
+					<div class="container-fluid">
+						<inflight-introduction></inflight-introduction>
+					</div>
+					-->
+
+					<!-- Rewards -->
+					<div class="container-fluid">
+						<div class="row">
+							<header>
+								<h3>Rewards:</h3>
+							</header>
+							<hr>
+							<div class="col-md-12">
+								<p>Why the user is doing this?</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Questions -->
+					<div class="container-fluid"  >
+						<div class="row">
+							<header>
+								<h3>Question 1:</h3>
+							</header>
+							<hr>
+							<div class="col-md-12">
+								<p>Question 1 question text here:</p>
+							</div>
+
+							<form action="">
+								<input type="radio" name="question1" value="a"> Example text for a <br>
+								<input type="radio" name="question1" value="b"> Example text for b <br>
+								<input type="radio" name="question1" value="c"> Example text for c <br>
+								<input type="radio" name="question1" value="d"> Example text for d <br>
+							</form>
+						</div>
+					</div>
+
+					<!-- Angular Question container -->
+					<!-- 
+					<div class="container-fluid" ng-controller="questionCtrl as questionCtrl">
+						<div class="row" ng-repeat="questions in questionCtrl">
+
+							<h3> <inflight-title></inflight-title> </h3>
+
+							<inflight-gallery></inflight-gallery>
+
+							<inflight-questions></inflight-questions>
+
+						</div>
+					</div>
+					-->
+					<div class="container-fluid">
+						<div class="row">
+							<button class="btn">Previous</button>
+							<button class="btn">Next</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+	</body>
+
+	<!-- Angular local source -->
+	<script src="../../Resources/angular.js"></script>
+	<!-- JQuery local source -->
+	<script src="../../Resources/jquery.min.js"></script>
+	<!-- Bootstrap local source -->
+	<script src="../../Resources/bootstrap-compiled-3.2.0/js/bootstrap.min.js"></script>
+	<!-- Custom jscript -->
+	<script src="script.js"></script>
+	
+</html>
