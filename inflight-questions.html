@@ -1,14 +1,17 @@
-<header>
-	<h3>Test title = {{question.title}}</h3>
-</header>
-<hr>
-<div class="col-md-12">
-	<p>Test text = {{question.text}}</p>
+<div class="row">
+	<div ng-repeat="question in questions">
+		<header>
+			<h3>{{question.title}}</h3>
+		</header>
+		<hr>
+		<div class="col-md-12">
+			<p>{{question.text}}</p>
+		</div>
+		<form action="">
+			<input type="radio" name="question1" value="a"> {{question.response1}} <br>
+			<input type="radio" name="question1" value="b"> {{question.response2}} <br>
+			<input type="radio" name="question1" value="c"> {{question.response3}} <br>
+			<input type="radio" name="question1" value="d"> {{question.response4}} <br>
+		</form>
+	</div>
 </div>
-
-<form action="" ng-repeat="response in questions.responses">
-	<input type="radio" name="{{question.title}}" value="a"> {{question.response[0]}} <br>
-	<input type="radio" name="{{question.title}}" value="b"> Example text for b <br>
-	<input type="radio" name="{{question.title}}" value="c"> Example text for c <br>
-	<input type="radio" name="{{question.title}}" value="d"> Example text for d <br>
-</form>

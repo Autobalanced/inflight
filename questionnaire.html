@@ -30,7 +30,7 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		    	<ul class="nav navbar-nav navbar-right">
 		          <li><a href="#">Username/Signup</a></li>
-		          <li><a href="#">Points</a></li>
+		          <li><a href="#">0 Points</a></li>
 		          <li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Options<b class="caret"></b></a>
 					<ul class ="dropdown-menu">
@@ -45,85 +45,41 @@
 		</nav> 
 
 		<!-- Questionnaire main -->
-		<div class="container-fluid" ng-controller="QuestionController as questions">
+		<div class="container-fluid" ng-controller="QuestionCtrl">
 			<div class="row">
-				<div class="col-md-12">
-					
-					<!-- Introduction -->
-					<div class="container-fluid">
-						<div class="row">
-							<header>
-								<h3>Introduction:</h3>
-							</header>
-							<hr>
-							<div class="col-md-12">
-								<p>Introduction text here.</p>
-							</div>
-						</div>
-					</div>
+				<div class="col-md-9">					
 
 					<!-- Angular Introduction container -->
-					<!--
-					<div class="container-fluid">
-						<inflight-introduction></inflight-introduction>
-					</div>
-					-->
+					<inflight-introduction></inflight-introduction>
+					
 
 					<!-- Rewards -->
-					<div class="container-fluid">
-						<div class="row">
-							<header>
-								<h3>Rewards:</h3>
-							</header>
-							<hr>
-							<div class="col-md-12">
-								<p>Why the user is doing this?</p>
-							</div>
+					<div class="row">
+						<header>
+							<h3>Rewards:</h3>
+						</header>
+						<hr>
+						<div class="col-md-12">
+							<p>Why the user is doing this?</p>
 						</div>
-					</div>
-
-					<!-- Questions -->
-					<div class="container-fluid"  >
-						<div class="row">
-							<header>
-								<h3>Question 1:</h3>
-							</header>
-							<hr>
-							<div class="col-md-12">
-								<p>Question 1 question text here:</p>
-							</div>
-
-							<form action="">
-								<input type="radio" name="question1" value="a"> Example text for a <br>
-								<input type="radio" name="question1" value="b"> Example text for b <br>
-								<input type="radio" name="question1" value="c"> Example text for c <br>
-								<input type="radio" name="question1" value="d"> Example text for d <br>
-							</form>
-						</div>
-					</div>
+					</div>				
 
 					<!-- Angular Question container -->
-					<!-- 
-					<div class="container-fluid" ng-controller="questionCtrl as questionCtrl">
-						<div class="row" ng-repeat="questions in questionCtrl">
-
-							<h3> <inflight-title></inflight-title> </h3>
-
-							<inflight-gallery></inflight-gallery>
-
-							<inflight-questions></inflight-questions>
-
+					<inflight-questions></inflight-questions>
+					
+					
+					<div class="row">
+						<hr>
+						<div> <!-- Div is only here to enforce button order -->
+							<button class="btn button-default pull-right">Previous</button>
+						</div>
+						<div> <!-- Div is only here to enforce button order (Better way?) -->
+							<button class="btn button-default pull-right">Next</button>
 						</div>
 					</div>
-					-->
-					<div class="container-fluid">
-						<div class="row">
-							<button class="btn">Previous</button>
-							<button class="btn">Next</button>
-						</div>
-					</div>
-
+				
 				</div>
+				<div class="col-md-3">Live rewards/points update here.</div>
 			</div>
 		</div>
 		

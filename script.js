@@ -2,43 +2,41 @@
 (function() {
 	var app = angular.module('questionnaire', []);
 
-	app.controller('QuestionController', function()
+	app.controller('QuestionCtrl', function($scope)
 	{
-		this.questions = [
+		$scope.questions = [
 			{
-				title: 'Question 1',
-				text: 'Exmple text before responses',
-				reponse:
-				[
-					'This is example text for question 1.',
-					'This is example text for question 2 not question 1',
-					'More typing for example data kill me plz'
-				]
+				title: "Question 1",
+				text: "Example text before responses",
+				response1: "This is example text for question 1.",
+				response2: "This is response text for question 1.",
+				response3: "Do you feel lucky punk?.",
+				response4: "Test response text 4."
 			},
 			{
-				title: 'Question 2',
-				text: 'Example text before responses',
-				response:
-				[
-					'Test data 1 for question 2 part 2'
-				]
+				title: "Question 2",
+				text: "How happy are you with the current inflight customer service?",
+				response1: "Very Happy",
+				response2: "Happy",
+				response3: "Unhappy",
+				response4: "Displeased"
 			},
 		];
 	});
 
-	app.directive('inflightQuestions', function()
+	app.directive("inflightQuestions", function()
 	{
 		return {
-			restrict: 'E',
-			templateUrl: 'inflight-questions.html'
+			restrict: "E",
+			templateUrl: "inflight-questions.html"
 		};
 	});
 
-	app.directive('inflightIntroduction', function()
+	app.directive("inflightIntroduction", function()
 	{
 		return {
-			restrict: 'E',
-			templateURL: 'inflight-introduction.html'
+			restrict: "E",
+			templateUrl: "inflight-introduction.html"
 		};
 	});
 })();
