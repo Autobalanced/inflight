@@ -6,14 +6,16 @@
 	{
 		$scope.questions = [
 			{
+				id: "0",
 				title: "Question 1",
-				text: "Example text before responses",
-				response1: "This is example text for question 1.",
-				response2: "This is response text for question 1.",
-				response3: "Do you feel lucky punk?.",
-				response4: "Test response text 4."
+				text: "How many weeks a year do you spend on vacation?",
+				response1: "None.",
+				response2: "0-1",
+				response3: "1-2",
+				response4: "3 or more"
 			},
 			{
+				id: "1",
 				title: "Question 2",
 				text: "How happy are you with the current inflight customer service?",
 				response1: "Very Happy",
@@ -28,7 +30,28 @@
 	{
 		return {
 			restrict: "E",
-			templateUrl: "inflight-questions.html"
+			templateUrl: "inflight-questions.html",
+			//tab enabled questions (Needs a limiter on number of tabs tied to questions.length)
+			controller: function() {
+				this.tab = 0;
+
+				this.isSet = function(checkTab) {
+					return this.tab === checkTab;
+				};
+
+				this.setTab = function(activeTab) {
+					this.tab = activeTab;
+				};
+
+				this.upTab = function(tab) {
+					this.tab++;
+				};
+
+				this.downTab = function(tab) {
+					this.tab--;
+				}
+			},
+			controllerAs: "tab"
 		};
 	});
 
