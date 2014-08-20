@@ -1,5 +1,5 @@
 <div class="row">
-	<!-- tab class={{question.title?}} -->
+	
 	<div ng-repeat="question in questions" ng-show="tab.isSet({{question.id}})">
 		<header>
 			<h3>{{question.title}}</h3>
@@ -9,17 +9,19 @@
 			<p><strong>{{question.text}}</strong></p>
 		</div>
 
-		<question-radio ng-if=""></question-radio>
+		<!-- <question-radio ng-show="question.type == 'radio'"></question-radio> -->
 
-		<question-textarea ngif-""></question-textform>
+		<!-- <question-textarea ng-show="question.type == 'textarea'"></question-textform> -->
 
-
-		<!-- To be moved to question-radio.html -->
-		<div class="radio" ng-repeat="responses in question.responses">
+		<div class="radio" ng-repeat="responses in question.responses" ng-if="question.type == 'radio'">
 			<label>
 				<!-- Need to change to "responses.index" for cleaner html  -->
-				<input type="radio" name="responsesRadio{{question.id}}" id="{{responses}}" value="{{responses}}"> {{ responses }}
+				<input type="radio" name="responsesRadio{{question.id}}" id="responese{{responses}}" value="{{responses}}"> {{ responses }}
 			</label>
+		</div>
+
+		<div ng-repeat="responses in question.responses" ng-if="question.type == 'textarea'">
+			<textarea name="{{responses}}" id="" cols="30" rows="10" class="form-control"></textarea>
 		</div>
 
 	</div>
