@@ -9,24 +9,16 @@
 			<p><strong>{{question.text}}</strong></p>
 		</div>
 
-		<div class="radio">
+		<question-radio ng-if=""></question-radio>
+
+		<question-textarea ngif-""></question-textform>
+
+
+		<!-- To be moved to question-radio.html -->
+		<div class="radio" ng-repeat="responses in question.responses">
 			<label>
-				<input type="radio" name="responsesRadio" id="responsesRadio1" value="option1"> {{question.response1}}
-			</label>
-		</div>
-		<div class="radio">
-			<label>
-				<input type="radio" name="responsesRadio" id="responsesRadio2" value="option2"> {{question.response2}}
-			</label>
-		</div>
-		<div class="radio">
-			<label>
-				<input type="radio" name="responsesRadio" id="responsesRadio3" value="option3"> {{question.response3}}
-			</label>
-		</div>
-		<div class="radio">
-			<label>
-				<input type="radio" name="responsesRadio" id="responsesRadio4" value="option4"> {{question.response4}}
+				<!-- Need to change to "responses.index" for cleaner html  -->
+				<input type="radio" name="responsesRadio{{question.id}}" id="{{responses}}" value="{{responses}}"> {{ responses }}
 			</label>
 		</div>
 

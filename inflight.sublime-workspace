@@ -1,0 +1,318 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cane",
+				"cancelEditing"
+			],
+			[
+				"shoul",
+				"shouldShowCreating"
+			],
+			[
+				"canc",
+				"cancelEditing"
+			],
+			[
+				"is",
+				"isCreating"
+			],
+			[
+				"$scope",
+				"$scope	AngularJS"
+			],
+			[
+				"max",
+				"max-height"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.js",
+			"settings":
+			{
+				"buffer_size": 60,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 380.0,
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Node/express/expresshogan/app.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/animationtest/SamsungGrid/index2.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/AngularJSGemStore/product-tabs.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/AngularJSGemStore/products.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/InFlight/questionnaire.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/animationtest/SamsungGrid/css/normalize.css",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/animationtest/SamsungGrid/css/demo.css",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/animationtest/SamsungGrid/css/component.css",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/InFlight/index.css",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/InFlight/index.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/eggly/app/eggly-app.start.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/eggly/index.start.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/AngularJSGemStore/app.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/AngularJSGemStore/index.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/egghead/main.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/egghead/index6.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/egghead/index7.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/egghead/index8.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/mongodb/showtrackr/public/stylesheets/style.css",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/mongodb/showtrackr/package.json",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/mongodb/showtrackr/gulpfile.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/mongodb/showtrackr/public/app.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/mongodb/showtrackr/server.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/mongodb/showtrackr/public/index.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/tvshow-tracker-master/public/index.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/mongodb/showtrackr/app.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/mongodb/showtrackr/public/script.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Node/exp2014/bin/www",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/eggly/egghead-angularjs-from-scratch-getting-started/app/eggly-app.start.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/eggly/egghead-angularjs-from-scratch-getting-started/index.complete.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/eggly/app/test.js",
+		"/C/Users/Autobalanced/AppData/Roaming/Sublime Text 3/Packages/User/AngularJS-js-completions.sublime-settings",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Resume/Resume.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/egghead/main8.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/egghead/main7.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/egghead/main4.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/egghead/index4.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/egghead/main6.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/egghead/main5.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/egghead/index5.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/egghead/main3.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/egghead/index3.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/egghead/main2.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/egghead/index2.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/egghead/index.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/angularTest.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Resume/Design Look/index.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/product-title.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/angular-demo-app-master/product-gallery.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/InFlight/stylesheet.cs",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/script.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/stylesheet.css",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Angular/index.html",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Resume/Design Look/js/custom.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Resume/Design Look/js/init.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Resume/customResume.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Resume/stylesheet.css",
+		"/D/Games/Steam/steamapps/common/Skyrim/enblocal.ini",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/numenera/numenera/src/main/assembly/dojo/numenera.profile.js",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/numenera/numenera/src/main/dojo/index.html",
+		"/C/Users/Autobalanced/Documents/Programming/HML5 Templates/html5up-prologue/index.html",
+		"/C/Users/Autobalanced/Documents/Paper/Numenera/Foren-Kun",
+		"/C/Users/Autobalanced/Documents/my games/Watch_Dogs/RLD!/GamerProfile.xml",
+		"/C/Users/Autobalanced/AppData/Roaming/NCSOFT/WildStar/Addons/mouselockrebind/WildstarMouselockRebind.ahk",
+		"/C/Users/Autobalanced/Documents/Programming/Projects/Resume/stylesheet2.css"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"catg",
+			"md",
+			"hidden",
+			"html5s",
+			"div"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 60,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 118.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 232.0
+	},
+	"project": "inflight.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
