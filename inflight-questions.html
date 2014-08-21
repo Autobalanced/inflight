@@ -21,7 +21,7 @@
 		</div>
 
 		<div ng-repeat="responses in question.responses" ng-if="question.type == 'textarea'">
-			<textarea name="{{responses}}" id="" cols="30" rows="10" class="form-control"></textarea>
+			<textarea name="responsesText{{question.id}}" id="" rows="5" class="form-control"></textarea>
 		</div>
 
 	</div>
