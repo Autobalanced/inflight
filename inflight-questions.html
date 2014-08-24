@@ -20,8 +20,12 @@
 			</label>
 		</div>
 
-		<div ng-repeat="responses in question.responses" ng-if="question.type == 'textarea'">
-			<textarea name="responsesText{{question.id}}" id="" rows="5" class="form-control"></textarea>
+		<div ng-repeat="responses in question.responses" ng-if="question.type == 'textarea'">	
+			<blockquote class="blockquote">
+				<p class="text-muted">{{ textResponse }}</p>
+				<footer>Username here.</footer>
+			</blockquote>
+			<textarea name="responsesText{{question.id}}" id="" rows="5" class="form-control" ng-model="textResponse"></textarea>
 		</div>
 
 	</div>

@@ -1,94 +1,101 @@
 <!DOCTYPE html>
 <html ng-app="questionnaire">
 
-	<head>
-		<title>Inflight Research v0.1</title>
+<head>
+    <title>Inflight Research v0.1</title>
 
-		<!-- Latest compiled and minified bootstrap CSS -->
-		<link rel="stylesheet" href="../../Resources/bootstrap-compiled-3.2.0/css/bootstrap.min.css">
-		<!-- Custom bootstrap theme -->
-		<link rel="stylesheet" href="http://bootswatch.com/slate/bootstrap.min.css">
-		<!-- Custom stylesheet -->
-		<link rel="stylesheet" href="stylesheet.css">
-	</head>
+    <!-- Latest compiled and minified bootstrap CSS -->
+    <link rel="stylesheet" href="../../Resources/bootstrap-compiled-3.2.0/css/bootstrap.min.css">
+    <!-- Custom bootstrap theme -->
+    <link rel="stylesheet" href="http://bootswatch.com/slate/bootstrap.min.css">
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
 
-	<body>
+<body>
 
-		<!-- Navbar for user -->
-		<nav class="navbar navbar-default navbar-static-top" role="navigation">
-		  <div class="container-fluid">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example=navbar=collapse-1">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand" href="#">Crowdflight v0.1</a>
-		    </div>
+    <!-- Navbar for user -->
+    <!-- Could be templated to use user.directive/factory? -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example=navbar=collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Crowdflight v0.1</a>
+            </div>
 
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		    	<ul class="nav navbar-nav navbar-right">
-		          <li><a href="#">Username/Signup</a></li>
-		          <li><a href="#">0 Points</a></li>
-		          <li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Options<b class="caret"></b></a>
-					<ul class ="dropdown-menu">
-						<li><a href="#">Account Settings</a></li>
-						<li><a href="#">Device Settings</a></li>
-						<li><a href="#">Call Attendant</a></li>
-					</ul>
-		          </li>
-		        </ul>
-		    </div>
-		  </div>
-		</nav> 
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Username/Signup</a>
+                    </li>
+                    <li><a href="#">0 Points</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Options<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Account Settings</a>
+                            </li>
+                            <li><a href="#">Device Settings</a>
+                            </li>
+                            <li><a href="#">Call Attendant</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-		<!-- Questionnaire main -->
-		<div class="container-fluid" ng-controller="QuestionCtrl">
-			<div class="row">
-				<div class="col-md-9">					
+    <!-- Questionnaire main -->
+    <div class="container-fluid" ng-controller="QuestionCtrl">
+        <div class="row">
+            <div class="col-md-9">
 
-					<!-- Angular Introduction container -->
-					<inflight-introduction></inflight-introduction>				
+                <!-- Angular Introduction container -->
+                <inflight-introduction></inflight-introduction>
 
-					<!-- Angular Question container -->
-					<inflight-questions></inflight-questions>
-					
-					
-					<div class="row">
-						<hr>
-						<ul class="pager">
-							<li class="previous" ng-class="{ active:tab.isSet(1) }"><a href="#" ng-click="tab.downTab()">&larr; Previous</a></li>
-							<li class="next" ng-class="{ active:tab.isSet(0) }"><a href="#" ng-click="tab.upTab()">Next &rarr;</a></li>
-						</ul>
-					</div>
-				
-				</div>
+                <!-- Angular Question container -->
+                <inflight-questions></inflight-questions>
 
-				<!-- Live points update -->
-				<div class="col-md-3">
-					<div class="thumbnail">
-						<h3>Current reward progress</h3>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:10%"></div>
-						</div>
-					</div>
-					
-				</div>
 
-			</div>
-		</div>
-		
-		<!-- Angular local source -->
-		<script src="../../Resources/angular.js"></script>
-		<!-- JQuery local source -->
-		<script src="../../Resources/jquery.min.js"></script>
-		<!-- Bootstrap local source -->
-		<script src="../../Resources/bootstrap-compiled-3.2.0/js/bootstrap.min.js"></script>
-		<!-- Custom jscript -->
-		<script src="script.js"></script>
+                <div class="row">
+                    <hr>
+                    <ul class="pager">
+                        <li class="previous" ng-class="{ active:tab.isSet(1) }"><a href="#" ng-click="tab.downTab()">&larr; Previous</a>
+                        </li>
+                        <li class="next" ng-class="{ active:tab.isSet(0) }"><a href="#" ng-click="tab.upTab()">Next &rarr;</a>
+                        </li>
+                    </ul>
+                </div>
 
-	</body>
-	
+            </div>
+
+            <!-- Live points update -->
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <h3>Current reward progress</h3>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:10%"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Angular local source -->
+    <script src="../../Resources/angular.js"></script>
+    <!-- JQuery local source -->
+    <script src="../../Resources/jquery.min.js"></script>
+    <!-- Bootstrap local source -->
+    <script src="../../Resources/bootstrap-compiled-3.2.0/js/bootstrap.min.js"></script>
+    <!-- Custom jscript -->
+    <script src="script.js"></script>
+
+</body>
+
 </html>
