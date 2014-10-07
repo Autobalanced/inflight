@@ -1,0 +1,11 @@
+{
+  "firebase": "crowdflight",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**",
+    "**/img/**",
+    "**/Showcase/**"
+  ]
+}
